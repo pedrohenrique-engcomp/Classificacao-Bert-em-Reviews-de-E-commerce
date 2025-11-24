@@ -143,3 +143,5 @@ Texto: "Comprei um iPhone 12 na loja da Vivo em São Paulo."
 * NeuralMind (BERTimbau)
 
 * Davlan (Multilingual NER)
+
+* Link Kaggle: https://www.kaggle.com/code/leandroal/an-lise-de-sentimento-de-tweets-na-blackfiday
