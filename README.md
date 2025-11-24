@@ -1,7 +1,7 @@
 # Classificacao-Bert-em-Reviews-de-E-commerce
 projeto implementa um pipeline completo de Processamento de Linguagem Natural (NLP) focado em reviews de produtos no mercado brasileiro. O sistema utiliza **Fine-Tuning** de um modelo BERT pré-treinado para classificação de sentimentos e um pipeline secundário para Extração de Entidades Nomeadas (NER).
 
-###📋 Visão Geral
+##📋 Visão Geral
 
 O projeto está dividido em dois módulos principais:
 
@@ -9,7 +9,7 @@ O projeto está dividido em dois módulos principais:
 
 2. **Reconhecimento de Entidades (NER)**: Extração de nomes de pessoas, organizações e locais a partir de textos não estruturados.
 
-###🛠️ **Tecnologias e Dependências**
+##🛠️ **Tecnologias e Dependências**
 
 O código foi desenvolvido em Python e utiliza o ecossistema Hugging Face.
 
@@ -32,7 +32,7 @@ Instalação:
 !pip install datasets scikit-learn pandas seaborn
 ``
 
-###**📊 Dataset e Pré-processamento**
+##**📊 Dataset e Pré-processamento**
 
 Fonte dos Dados: ``B2W-Reviews01.csv`` (Dataset público de reviews do grupo B2W).
 
@@ -60,7 +60,7 @@ Total do dataset de treino/teste: 4.500 exemplos.
 
 Divisão: 80% Treino / 20% Teste.
 
-###**🧠 Modelo de Sentimento (Fine-Tuning)**
+##**🧠 Modelo de Sentimento (Fine-Tuning)**
 
 Utilizou-se o modelo **BERTimbau** ``(neuralmind/bert-base-portuguese-cased)``, o estado da arte para língua portuguesa.
 
@@ -94,7 +94,7 @@ Neutro: É a classe mais difícil (63% Precision), frequentemente confundida com
 
 O modelo final foi salvo no diretório ``./modelo_b2w_sentimento.``
 
-###**🔍 Módulo de NER (Named Entity Recognition)**
+##**🔍 Módulo de NER (Named Entity Recognition)**
 
 Além da classificação, implementou-se um pipeline para extração de entidades usando o modelo ``Davlan/bert-base-multilingual-cased-ner-hrl.``
 
@@ -118,7 +118,7 @@ Texto: "Comprei um iPhone 12 na loja da Vivo em São Paulo."
 
 * Entidade: São Paulo (LOC)
 
-###🚀 **Como Executar**
+##🚀 **Como Executar**
 
 1. Certifique-se de ter o arquivo B2W-Reviews01.csv no diretório raiz.
 
@@ -132,7 +132,7 @@ Texto: "Comprei um iPhone 12 na loja da Vivo em São Paulo."
 
 4. Execute o bloco de Inferência NER para testar a extração de entidades em frases arbitrárias.
 
-###⚠️ **Notas Importantes**
+##⚠️ **Notas Importantes**
 
 * **Autenticação HF**: O script remove explicitamente o token do Hugging Face (os.environ.pop('HF_TOKEN')) para evitar conflitos em ambientes públicos/compartilhados.
 
